@@ -34,7 +34,12 @@ export const infoSchema = z.object({
   email: z
     .email({ error: "Email Format Error" })
     .min(1, { error: "EMail Required" }),
-  phone: z.string().min(1, { error: "This field is required" }),
+  phone: z
+    .string()
+    .min(1, { error: "This field is required" })
+    .regex(/^\+1\s\d{3}\s\d{3}\s\d{3}$/, {
+      error: "Phone Format Error",
+    }),
   name: z.string().min(1, { error: "This field is required" }),
 });
 
