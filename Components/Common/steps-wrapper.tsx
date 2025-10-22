@@ -22,7 +22,7 @@ export default function StepsWrapper({
   });
 
   return (
-    <div className="flex flex-auto flex-col p-6 pb-2 md:p-12 lg:w-[550px]">
+    <div className="flex flex-auto flex-col p-6 pb-6 md:p-12 md:pb-0 lg:w-[550px]">
       {activeStep.indexNo + 1 <= stepCount && (
         <>
           <h1 className="text-3xl font-bold text-blue-950">
