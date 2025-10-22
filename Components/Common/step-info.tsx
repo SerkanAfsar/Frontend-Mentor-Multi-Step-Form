@@ -41,7 +41,7 @@ function StepItem({
     return null;
   }
   return (
-    <div className="flex w-full items-center justify-center gap-1 text-white md:gap-4">
+    <div className="flex w-full items-center justify-center gap-1 text-white md:justify-start md:gap-4">
       <div
         className={cn(
           "flex aspect-square w-10 shrink-0 grow-0 items-center justify-center rounded-full border border-white md:w-12",
