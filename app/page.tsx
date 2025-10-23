@@ -9,7 +9,7 @@ export default function Home() {
   const ActiveStep = stepsData[activeStepIndex];
 
   return (
-    <section className="flex w-full flex-col items-stretch rounded-md bg-white shadow md:h-auto md:flex-row md:p-4">
+    <section className="flex w-full max-w-4xl flex-col rounded-md bg-white shadow md:h-auto md:flex-row md:items-stretch md:p-4">
       <StepInfo steps={stepsData} activeStepIndex={activeStepIndex} />
       <StepsWrapper
         setActiveStepIndex={setActiveStepIndex}
